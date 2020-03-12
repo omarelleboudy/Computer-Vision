@@ -1,0 +1,16 @@
+I = imread('Ace.');
+figure;
+imshow(I); %show original image
+first = edge(I, 'prewitt');
+
+figure;
+imshow(first); % first derivative
+second = edge(I, 'log');
+figure;
+
+imshow(second); %  second derivative
+canny = edge(I, 'canny');
+figure;
+
+imshow(canny); % canny algorithm
+
